@@ -1,0 +1,64 @@
+#include <iostream>
+//#include <std::list<T> ;>
+
+using namespace std;
+
+void StoreKeeper()
+       {
+        int i,a,b;
+        int c[10];
+        cout << "Please select from the menu"<< endl;
+        cout << "1. Add product"<< endl;
+        cout << "2. Delete product"<< endl;
+        cout << "3. Modify product"<< endl;
+        cin >> i;
+        if(i == 1)
+    {
+        cout << "Add product"<< endl;
+        cout << "Enter product id" << endl;
+        cin >> a;
+        c[a] = a;
+        cout << "The entered product id is "<< c[a];
+        
+    }
+        
+    }
+
+int main()
+{
+ //   cout<<"Hello World";
+cout<<"Welcome ABS Aircraft Parts Management Ltd" << endl;
+    string j;
+   // int MAX_OPTION = 3; // number of options
+   // int i;
+    string x = "1";
+    string x1 = "2";
+    string x2 = "3";
+    cout << "please select from the menu " << endl;
+    cout << "1. Store Keeper" << endl;
+    cout << "2. Manager"<< endl;
+    cout << "3. Maintenance Engineer" << endl;
+    cin >> j;
+    
+    if(j == x)
+    {
+        cout << "Welcome Mr.Store Keeper"<< endl;
+        StoreKeeper();
+        
+    }
+    else if(j == x1)
+    {
+        cout << "Welcome Mr.Manager" ;
+        cout << "1. Add product"<< endl;
+    }
+    else if(j == x2)
+    {
+        cout << "Welcome Mr.Maintenance Engineer" ;
+    } 
+    else
+    {
+        cout << "Please select the correct option";
+    }
+    
+    return 0;
+}
